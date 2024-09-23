@@ -1,6 +1,5 @@
-package array;
+package twopointer;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Solution2018 {

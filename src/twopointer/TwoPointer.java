@@ -1,6 +1,4 @@
-package array;
-
-import javax.lang.model.SourceVersion;
+package twopointer;
 
 public class TwoPointer {
 
