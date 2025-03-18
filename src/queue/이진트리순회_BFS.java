@@ -21,12 +21,20 @@ public class 이진트리순회_BFS {
         // BFS는 재귀를 사용하지 않습니다!
         Queue<Node> queue = new LinkedList<>();
         queue.add(node);
+        int level = 0;
         while (!queue.isEmpty()) {
-            for (int i = 0; i < queue.size(); i++) {
+            int len = queue.size();
+            System.out.print("level " + level + ": ");
+            for (int i = 0; i < len; i++) {
                 Node curr = queue.poll();
-                System.out.println(curr.data);
+                System.out.print(curr.data + " ");
                 // 자식 있니? (lt, rt) 있다면 큐에 추가, 없으면 넘어가기
+
+                if (curr.lt != null) queue.add(curr.lt);
+                if (curr.rt != null) queue.add(curr.rt);
             }
+            level++;
+            System.out.println();
         }
     }
 

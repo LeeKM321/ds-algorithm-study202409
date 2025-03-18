@@ -1,4 +1,4 @@
-package recursive;
+package dfs_bfs;
 
 class Node {
     int data;
